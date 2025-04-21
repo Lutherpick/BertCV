@@ -1,10 +1,13 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# C extensions
 *.so
+
+# Distribution / packaging
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -21,20 +24,51 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
+# Virtual environments
 venv/
+env/
 ENV/
 
-# IDE
+# Flask instance folder
+instance/
+
+# IDE files
 .idea/
 .vscode/
 *.swp
 *.swo
 
-# Project specific
+# Uploaded files and temporary files
 uploads/
-*.pdf
+temp/
+*.tmp
+
+# Environment variables
+.env
+.env.local
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTorch checkpoints
+*.pth
+*.pt
+model_checkpoints/
+
+# Logs
+logs/
 *.log
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
 
 # OS specific
 .DS_Store

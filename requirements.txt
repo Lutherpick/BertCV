@@ -1,7 +1,8 @@
-flask>=2.0.1
-spacy>=3.5.0
-tika>=2.6.0
-torch>=2.0.0
-numpy>=1.21.0
-python-dateutil>=2.8.2
-requests>=2.26.0 
+flask==3.0.2
+tika==2.6.0
+spacy==3.7.4
+torch==2.2.1
+transformers==4.38.2
+numpy==1.26.4
+dateparser==1.2.0
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl 

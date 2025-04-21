@@ -1,100 +1,56 @@
-# CV Skills Extractor
+# CV Extraction and Analysis Tool
 
-A web application that analyzes CVs/resumes to extract skills and assess candidate fit for job requirements. Built with Python Flask and spaCy NLP.
+A web application for extracting and analyzing skills and experience from CV/resume documents. The system uses NLP and machine learning techniques to identify relevant skills and experience from uploaded CVs and match them against job requirements.
 
 ## Features
 
-- Extract skills from CV text or PDF files
-- Analyze candidate fit based on required skills and experience
-- Calculate match scores and provide detailed feedback
-- Support for both text input and PDF upload
-- Modern, responsive UI with real-time analysis
+- PDF document upload and text extraction
+- Skills extraction using hybrid approach (rule-based and ML-based)
+- Experience detection and duration calculation
+- Candidate evaluation against job requirements
+- Detailed feedback on skill matching and experience relevance
 
-## Requirements
+## Technical Stack
 
-- Python 3.8+
-- Flask
-- spaCy
-- Apache Tika
-- PyTorch
-- Other dependencies listed in requirements.txt
+- Python 3.7+
+- Flask web framework
+- PyTorch for machine learning components
+- Transformers library (BERT, BART)
+- Apache Tika for PDF parsing
+- spaCy for NLP processing
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/cv-skills-extractor.git
-cd cv-skills-extractor
+git clone https://github.com/yourusername/cv-extraction.git
+cd cv-extraction
 ```
 
-2. Create a virtual environment and activate it:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install the required packages:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Download the spaCy model:
+3. Download the spaCy model:
 ```bash
 python -m spacy download en_core_web_sm
 ```
 
-## Usage
-
-1. Start the Flask application:
+4. Run the application:
 ```bash
 python app.py
 ```
 
-2. Open your web browser and navigate to `http://localhost:5000`
+The application will be available at http://localhost:5000
 
-3. Either:
-   - Paste CV text directly into the text input
-   - Upload a PDF file
-   - Specify job requirements (skills and experience)
-   - Click "Analyze CV" to get results
+## Usage
 
-## Project Structure
-
-```
-cv-skills-extractor/
-├── app.py                 # Main Flask application
-├── templates/
-│   └── index.html        # Frontend template
-├── static/               # Static files (if any)
-├── uploads/             # Temporary folder for uploads
-├── requirements.txt     # Python dependencies
-└── README.md           # This file
-```
-
-## How It Works
-
-1. **Skills Extraction**:
-   - Uses spaCy NLP for text processing
-   - Matches against known technical skills
-   - Identifies potential skills using NLP patterns
-   - Handles multi-word skills and variations
-
-2. **Experience Analysis**:
-   - Extracts work experience details
-   - Calculates total experience duration
-   - Identifies roles and companies
-   - Provides context for each position
-
-3. **Candidate Assessment**:
-   - Matches required skills against extracted skills
-   - Evaluates experience against requirements
-   - Calculates overall match score
-   - Provides detailed feedback
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+1. Access the web interface
+2. Upload a CV/resume in PDF format
+3. Enter job requirements (skills and years of experience)
+4. Click "Analyze CV" to get the evaluation results
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+MIT 
